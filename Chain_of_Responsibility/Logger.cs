@@ -8,7 +8,7 @@ namespace Chain_of_Responsibility
 {
     public class Logger: Handler
     {
-        public Logger(Handler request) : base(request) { }
+        public Logger(Handler next) : base(next) { }
 
         protected override bool DoHandle(HttpRequest request)
         {
